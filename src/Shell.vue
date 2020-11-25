@@ -1,8 +1,15 @@
 <template>
   <div class="flex justify-center w-full h-full bg-brand">
     <div class="container">
-      <div class="mb-4 text-white text-8xl">Huron Game</div>
+      <!-- title -->
+      <div class="mb-4 text-white text-8xl">
+        Huron Game
+        <span class="text-6xl text-yellow-400">
+          <i class="fas fa-truck-pickup"></i>
+        </span>
+      </div>
 
+      <!-- descriptions -->
       <div class="flex items-end mb-1">
         <div class="text-sm font-medium text-white uppercase w-80">
           Select Set below
@@ -12,6 +19,8 @@
           Description
         </div>
       </div>
+
+      <!-- content -->
       <div class="flex">
         <!-- selector of sets available -->
         <div
@@ -35,15 +44,26 @@
           </div>
         </div>
       </div>
-      <div class="mt-2 text-right">
+
+      <!-- button -->
+      <div class="flex justify-between mt-2">
+        <button
+          class="px-4 py-2 font-medium text-white bg-green-600 rounded-md -600 hover:bg-green-700"
+        >
+          <i class="fas fa-plus"></i>
+          <span class="ml-2">Create New Tile Set</span>
+        </button>
         <button
           class="px-4 py-2 font-medium text-white bg-yellow-600 rounded-md hover:bg-yellow-700"
         >
-          <span class="mr-2">Start Game</span>
-
           <i class="fas fa-play"></i>
+          <span class="ml-2">Start Game</span>
         </button>
       </div>
+
+      <footer class="mt-40 text-center text-white">
+        Build with 💙 in Cupertino, CA
+      </footer>
     </div>
   </div>
 </template>
