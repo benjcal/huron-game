@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Shell from './Shell.vue'
 import './styles/main.css'
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(Shell),
+}).$mount('#shell')

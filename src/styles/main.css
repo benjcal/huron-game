@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* resets */
+html,
+body,
+#shell {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
