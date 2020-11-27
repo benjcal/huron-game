@@ -53,12 +53,13 @@
           <i class="fas fa-plus"></i>
           <span class="ml-2">Create New Tile Set</span>
         </button>
-        <button
+        <router-link
+          to="/game"
           class="px-4 py-2 font-medium text-white bg-yellow-600 rounded-md hover:bg-yellow-700"
         >
           <i class="fas fa-play"></i>
           <span class="ml-2">Start Game</span>
-        </button>
+        </router-link>
       </div>
 
       <footer class="mt-40 text-center text-white">

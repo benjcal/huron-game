@@ -10,22 +10,19 @@
       </button>
     </div>
 
-    <div>
-      <iframe
-        ref="iframe"
-        class="rounded-md"
-        width="1680"
-        height="980"
-        src="http://localhost/iframe/http_test/index.html"
-        frameborder="0"
-      ></iframe>
+    <div style="width: 1680px; height: 980px;">
+      <Board />
     </div>
   </div>
 </template>
 
 <script>
+import Board from '../components/Board'
 export default {
   name: 'Shell',
+  components: {
+    Board,
+  },
   data: () => ({
     currentZoom: 1,
   }),
