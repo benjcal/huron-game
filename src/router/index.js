@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/game',
     name: 'Game',
-    component: () => import('../views/Shell')
+    component: () => import('../views/Game')
   }
 ]
 

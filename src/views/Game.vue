@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Board from '../components/Board'
+import Board from '../components/Game/Board'
 export default {
   name: 'Shell',
   components: {

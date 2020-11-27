@@ -11,8 +11,8 @@
         :imgSrc="tile.img_src"
         @click="handleTileClick(i)"
       />
-      <Progress :x="344" :y="1496" :val="progressVal" />
-      <BigButton
+      <ProgressBar :x="344" :y="1496" :val="progressVal" />
+      <RevealButton
         @click="reveal"
         :x="20"
         :y="1416"
@@ -21,15 +21,15 @@
     </div>
     <!-- <Reward v-if="showReward" @click="hideReward" /> -->
     <Fireworks v-if="showReward" @click="hideReward" />
-    <audio ref="coin" src="../assets/coin_found.ogg"></audio>
-    <audio ref="reward" src="../assets/reward.ogg"></audio>
+    <audio ref="coin" src="@/assets/coin_found.ogg"></audio>
+    <audio ref="reward" src="@/assets/reward.ogg"></audio>
   </div>
 </template>
 
 <script>
 import Tile from './Tile'
-import Progress from './Progress'
-import BigButton from './BigButton'
+import ProgressBar from './ProgressBar'
+import RevealButton from './RevealButton'
 // import Reward from './Reward'
 import Fireworks from './Fireworks'
 
@@ -37,8 +37,8 @@ export default {
   name: 'Board',
   components: {
     Tile,
-    Progress,
-    BigButton,
+    ProgressBar,
+    RevealButton,
     Fireworks,
     // Reward,
   },

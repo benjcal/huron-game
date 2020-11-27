@@ -1,6 +1,6 @@
 <template>
   <div class="tile" :style="tileStyle" @click="click">
-    <img v-show="prize" class="coin" src="../assets/coin_07.png" alt="" />
+    <img v-show="prize" class="coin" src="@/assets/coin.png" alt="" />
     <div :class="tileAnimationClassToggle">
       <div class="tile-img">
         <div class="flex justify-center">
@@ -9,7 +9,7 @@
       </div>
 
       <p class="tile-text">Hello</p>
-      <img src="../assets/tile_cover.png" alt="" />
+      <img src="@/assets/tile_cover.png" alt="" />
     </div>
   </div>
 </template>
@@ -54,7 +54,7 @@ export default {
 
   user-select: none;
 
-  background: url('../assets/tile_bottom.png');
+  background: url('../../assets/tile_bottom.png');
 
   clip: rect(0px, 256px, 300px, 0px);
   position: absolute;
